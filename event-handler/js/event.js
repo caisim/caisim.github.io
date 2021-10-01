@@ -2,6 +2,7 @@ function transformUppercase(_val) {
     return _val.toUpperCase();    
 }
 
+// DOM event listener
 let elNamaPengguna = document.getElementById("namaPengguna")
 elNamaPengguna.addEventListener("keyup",function(){
     elNamaPengguna.value = transformUppercase(elNamaPengguna.value)
@@ -17,6 +18,6 @@ function checkPassword() {
         alert("Password too short!")
     }    
 }
-
+// tradditional DOM element handler
 let elKL = document.getElementById("kataLaluan")
 elKL.onblur = checkPassword
